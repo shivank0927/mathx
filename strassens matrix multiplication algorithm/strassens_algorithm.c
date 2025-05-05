@@ -13,10 +13,19 @@ int main(){
 
 	for(int i = 0; i < 8; i++){
 		for(int j = 0; j < 8; j++){
-			int element = srand() % 100 + 1; // random element b/w 1, 100
+			int element = rand() % 100 + 1; // random element b/w 1, 100
 
 			resultMatrix[i][j] = element;
 		}
 	}
+	
+	for(int i = 0; i < 8; i++){
+		for(int j = 0; j < 8; j++){
+			printf("%d", resultMatrix[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
 	
 	
